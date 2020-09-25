@@ -35,6 +35,9 @@
 
   <!-- Styles -->
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <link href="{{ URL::to('css/main.css') }}" rel="stylesheet">
+  @yield('links')
+
 </head>
 <body>
     <div id="app">
@@ -102,5 +105,6 @@
   <script src="{{URL::to('Adminlte/dist/js/demo.js')}}"></script>
   <!-- overlayScrollbars -->
   <script src="{{URL::to('Adminlte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
+  @yield('script')
 </body>
 </html>
